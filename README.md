@@ -22,6 +22,5 @@
 <h2>Currently learning and sharpening my TypeScript skills on another platform, so you won’t see many green dots here 🙂</h2>
 
 <p>
-Today’s learning topics: understanding what tuples are and how to work with them, 
-using custom types like enums, and starting to learn object typing (hehe).
+Today’s learning topics: type aliases, function types, generics, union types, and type narrowing (type guards).
 </p>
