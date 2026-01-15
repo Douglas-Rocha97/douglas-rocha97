@@ -22,5 +22,28 @@
 <h2>Currently learning and sharpening my TypeScript skills on another platform, so you won’t see many green dots here 🙂</h2>
 
 <p>
-Today’s learning topics: type aliases, function types, generics, union types, and type narrowing (type guards).
+  <strong>Today’s learning topics:</strong>
 </p>
+
+<ul>
+  <li>
+    <strong>Literal Types &amp; Union Types</strong> — restricting possible values
+    (e.g. <code>'idle' | 'complete' | 'error'</code>)
+  </li>
+
+  <li>
+    <strong>Type Narrowing &amp; Type Guards</strong> — using the
+    <code>in</code> operator to safely narrow types
+  </li>
+
+  <li>
+    <strong>Type Narrowing with TypeScript Type Inference</strong> — leveraging
+    conditional checks like
+    <code>if ('method' in parameter) { ... } else { parameter.anotherMethod() }</code>
+  </li>
+
+  <li>
+    <strong><code>type</code> vs <code>interface</code></strong> — understanding
+    when to use each, noting that <code>interface</code> is intended for object types only
+  </li>
+</ul>
