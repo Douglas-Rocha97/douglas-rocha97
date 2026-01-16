@@ -29,23 +29,19 @@
   <li>
     <strong>Composed Types</strong> — making nested objects easier to read and reuse
     <br />
-    <code>
-      interface About { general: General }<br />
+    <code> interface About { general: General }<br />
       interface General { id: number; name: string; version: Version }
-      interface Version {...}    
-    </code>
+      interface Version {...} </code>
     <br />
     ↑ easier to understand than ↓
     <br />
-    <code>
-      Interface About {
+    <code> Interface About {
         general: {
           id:number, 
           name: string,
           version: {...}
         }
-      }
-    </code>
+      } </code>
     <br />
   </li>
 
