@@ -27,23 +27,40 @@
 
 <ul>
   <li>
-    <strong>Literal Types &amp; Union Types</strong> — restricting possible values
-    (e.g. <code>'idle' | 'complete' | 'error'</code>)
+    <strong>Composed Types</strong> — making nested objects easier to read and reuse
+    <br />
+    <code>
+      interface About { general: General }<br />
+      interface General { id: number; name: string; version: Version }
+      interface Version {...}    
+    </code>
+    ↑ easier to understand than ↓
+    <code>
+      Interface About {
+        general: {
+          id:number, 
+          name: string,
+          version: {...}
+        }
+      }
+    </code>
   </li>
 
   <li>
-    <strong>Type Narrowing &amp; Type Guards</strong> — using the
-    <code>in</code> operator to safely narrow types
+    <strong>Extending Interfaces</strong> — inheriting properties from another interface
+    <br />
+    <code>interface Square extends Shape { sideLength: number }</code>
   </li>
 
   <li>
-    <strong>Type Narrowing with TypeScript Type Inference</strong> — leveraging
-    conditional checks like
-    <code>if ('method' in parameter) { ... } else { parameter.anotherMethod() }</code>
+    <strong>Index Signatures</strong> — handling dynamic object keys (e.g. API responses)
+    <br />
+    <code>{ [key: string]: boolean }</code>
   </li>
 
   <li>
-    <strong><code>type</code> vs <code>interface</code></strong> — understanding
-    when to use each, noting that <code>interface</code> is intended for object types only
+    <strong>Optional Type Members</strong> — defining properties that may or may not exist
+    <br />
+    <code>firstName?: string</code>
   </li>
 </ul>
