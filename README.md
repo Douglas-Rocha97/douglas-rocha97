@@ -34,7 +34,9 @@
       interface General { id: number; name: string; version: Version }
       interface Version {...}    
     </code>
+    <br />
     ↑ easier to understand than ↓
+    <br />
     <code>
       Interface About {
         general: {
@@ -44,6 +46,7 @@
         }
       }
     </code>
+    <br />
   </li>
 
   <li>
